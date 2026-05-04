@@ -20,5 +20,6 @@ export type {
 } from './types';
 
 export { HealthBar } from './components/HealthBar';
+export { ManaBar } from './components/ManaBar';
 export { useTypewriter } from './hooks/useTypewriter';
 export { useCooldown } from './hooks/useCooldown';
