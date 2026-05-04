@@ -19,5 +19,6 @@ export type {
   DamageType,
 } from './types';
 
+export { HealthBar } from './components/HealthBar';
 export { useTypewriter } from './hooks/useTypewriter';
 export { useCooldown } from './hooks/useCooldown';
