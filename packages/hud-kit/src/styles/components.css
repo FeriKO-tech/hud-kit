@@ -1,5 +1,3 @@
-@import './variables.css';
-
 /* ── Base Reset ── */
 .hk-root { font-family: var(--hk-font); color: var(--hk-text); box-sizing: border-box; }
 .hk-root *, .hk-root *::before, .hk-root *::after { box-sizing: inherit; }

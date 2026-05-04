@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react';
+import '../../../packages/hud-kit/src/styles/variables.css';
 import '../../../packages/hud-kit/src/styles/components.css';
 import './preview.css';
 

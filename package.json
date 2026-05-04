@@ -9,7 +9,7 @@
     "typecheck": "pnpm --filter @feriko/hud-kit typecheck",
     "dev": "pnpm --filter storybook dev",
     "storybook": "pnpm --filter storybook dev",
-    "build:storybook": "pnpm --filter storybook build",
+    "build:storybook": "node scripts/build-storybook.mjs",
     "lint": "pnpm typecheck",
     "changeset": "changeset",
     "version-packages": "changeset version",
