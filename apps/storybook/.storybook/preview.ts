@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react';
-import '@feriko/hud-kit/styles.css';
+import '../../../packages/hud-kit/src/styles/components.css';
 import './preview.css';
 
 const preview: Preview = {
