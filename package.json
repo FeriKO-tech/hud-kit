@@ -3,16 +3,26 @@
   "private": true,
   "version": "0.0.0",
   "description": "Gaming HUD components for React — monorepo root",
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "build": "pnpm --filter @feriko/hud-kit build",
+    "typecheck": "pnpm --filter @feriko/hud-kit typecheck",
     "dev": "pnpm --filter storybook dev",
     "storybook": "pnpm --filter storybook dev",
-    "lint": "eslint . --ext .ts,.tsx",
+    "build:storybook": "pnpm --filter storybook build",
+    "lint": "pnpm typecheck",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish",
     "clean": "rimraf packages/*/dist apps/*/dist node_modules/.cache"
   },
   "keywords": ["react", "gamedev", "hud", "ui", "components", "gaming"],
   "author": "FeriKO",
   "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11",
+    "rimraf": "^6.0.1"
+  },
   "engines": {
     "node": ">=18",
     "pnpm": ">=8"
