@@ -39,7 +39,7 @@
 .hk-mana__segment--filled { background: linear-gradient(180deg, var(--hk-mana) 0%, color-mix(in srgb, var(--hk-mana) 65%, #000) 100%); box-shadow: 0 0 8px var(--hk-mana-glow); }
 
 /* ══════════════════════ XP BAR ══════════════════════ */
-.hk-xp { position: relative; width: 100%; border-radius: 4px; overflow: hidden; background: var(--hk-xp-bg); border: 1px solid var(--hk-border); }
+.hk-xp { position: relative; flex: 1; min-width: 0; width: 100%; border-radius: 4px; overflow: hidden; background: var(--hk-xp-bg); border: 1px solid var(--hk-border); }
 .hk-xp--sm { height: 8px; border-radius: 3px; }
 .hk-xp--md { height: 14px; }
 .hk-xp--lg { height: 20px; border-radius: 6px; }
@@ -47,7 +47,7 @@
 .hk-xp__shine { position: absolute; top: 0; left: 0; right: 0; height: 50%; background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, transparent 100%); pointer-events: none; }
 .hk-xp__label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.8); z-index: 2; }
 .hk-xp__level { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; height: 28px; border-radius: 50%; background: var(--hk-bg); border: 2px solid var(--hk-xp); font-size: 12px; font-weight: 800; color: var(--hk-xp); box-shadow: 0 0 12px var(--hk-xp-glow); }
-.hk-xp__wrapper { display: flex; align-items: center; gap: 10px; }
+.hk-xp__wrapper { display: flex; align-items: center; gap: 10px; width: 100%; }
 @keyframes hk-lvlup { 0% { transform: scale(1); box-shadow: 0 0 12px var(--hk-xp-glow); } 50% { transform: scale(1.3); box-shadow: 0 0 30px var(--hk-xp-lvlup), 0 0 60px var(--hk-xp-glow); border-color: var(--hk-xp-lvlup); color: var(--hk-xp-lvlup); } 100% { transform: scale(1); box-shadow: 0 0 12px var(--hk-xp-glow); } }
 .hk-xp__level--up { animation: hk-lvlup 0.8s var(--hk-ease) forwards; }
 
@@ -74,7 +74,7 @@
 .hk-inv__slot--rare { border-bottom: 2px solid var(--hk-rarity-rare); box-shadow: inset 0 -4px 12px rgba(59,130,246,0.1); }
 .hk-inv__slot--epic { border-bottom: 2px solid var(--hk-rarity-epic); box-shadow: inset 0 -4px 12px rgba(168,85,247,0.1); }
 .hk-inv__slot--legendary { border-bottom: 2px solid var(--hk-rarity-legendary); box-shadow: inset 0 -4px 12px rgba(245,158,11,0.15); }
-.hk-inv__icon { width: 70%; height: 70%; object-fit: contain; pointer-events: none; }
+.hk-inv__icon { width: 70%; height: 70%; display: inline-flex; align-items: center; justify-content: center; object-fit: contain; pointer-events: none; font-size: 24px; line-height: 1; }
 .hk-inv__qty { position: absolute; bottom: 2px; right: 4px; font-size: 10px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.9); }
 
 /* ══════════════════════ HOTBAR ══════════════════════ */
@@ -84,7 +84,7 @@
 .hk-hotbar__slot:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-1px); }
 .hk-hotbar__slot:active { transform: translateY(0) scale(0.95); }
 .hk-hotbar__slot--disabled { opacity: 0.4; pointer-events: none; }
-.hk-hotbar__icon { width: 28px; height: 28px; object-fit: contain; pointer-events: none; }
+.hk-hotbar__icon { width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; object-fit: contain; pointer-events: none; font-size: 22px; line-height: 1; }
 .hk-hotbar__keybind { position: absolute; top: 2px; left: 4px; font-size: 9px; font-weight: 700; color: var(--hk-text2); text-shadow: 0 1px 2px rgba(0,0,0,0.8); }
 .hk-hotbar__cd-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: var(--hk-hotbar-cd); transition: height 0.1s linear; pointer-events: none; }
 .hk-hotbar__cd-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.9); }
