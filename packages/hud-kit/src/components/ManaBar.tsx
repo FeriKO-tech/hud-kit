@@ -25,6 +25,7 @@ export function ManaBar({
   value,
   maxValue,
   variant = 'linear',
+  segments = 10,
   size = 'md',
   showValue = true,
   className,
@@ -60,6 +61,35 @@ export function ManaBar({
           />
         </svg>
         {showValue && <span className="hk-mana-radial__label">{Math.round(percent)}%</span>}
+      </div>
+    );
+  }
+
+  if (variant === 'segmented') {
+    const segmentCount = Math.max(1, Math.floor(segments));
+    const filledSegments = Math.round((percent / 100) * segmentCount);
+
+    return (
+      <div
+        className={['hk-root', 'hk-mana', 'hk-mana--segmented', `hk-mana--${size}`, className].filter(Boolean).join(' ')}
+        role="progressbar"
+        aria-valuemin={0}
+        aria-valuemax={maxValue}
+        aria-valuenow={safeValue}
+      >
+        <div className="hk-mana__segments">
+          {Array.from({ length: segmentCount }).map((_, index) => (
+            <span
+              className={['hk-mana__segment', index < filledSegments && 'hk-mana__segment--filled'].filter(Boolean).join(' ')}
+              key={index}
+            />
+          ))}
+        </div>
+        {showValue && (
+          <span className="hk-mana__label">
+            {formatValue(safeValue)} / {formatValue(maxValue)}
+          </span>
+        )}
       </div>
     );
   }

@@ -20,7 +20,8 @@ export interface HealthBarProps {
 export interface ManaBarProps {
   value: number;
   maxValue: number;
-  variant?: 'linear' | 'radial';
+  variant?: 'linear' | 'radial' | 'segmented';
+  segments?: number;
   size?: Size;
   showValue?: boolean;
   className?: string;

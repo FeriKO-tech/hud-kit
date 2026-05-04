@@ -35,6 +35,10 @@
 .hk-mana-radial__bg { fill: none; stroke: var(--hk-mana-bg); }
 .hk-mana-radial__fill { fill: none; stroke: var(--hk-mana); stroke-linecap: round; transition: stroke-dashoffset 0.5s cubic-bezier(0.4,0,0.2,1); filter: drop-shadow(0 0 6px var(--hk-mana-glow)); }
 .hk-mana-radial__label { position: absolute; font-size: 13px; font-weight: 700; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
+.hk-mana--segmented { padding: 3px; }
+.hk-mana__segments { display: flex; width: 100%; height: 100%; gap: 2px; }
+.hk-mana__segment { flex: 1; border-radius: 2px; background: rgba(255,255,255,0.08); }
+.hk-mana__segment--filled { background: linear-gradient(180deg, var(--hk-mana) 0%, color-mix(in srgb, var(--hk-mana) 65%, #000) 100%); box-shadow: 0 0 8px var(--hk-mana-glow); }
 
 /* ══════════════════════ XP BAR ══════════════════════ */
 .hk-xp { position: relative; width: 100%; border-radius: 4px; overflow: hidden; background: var(--hk-xp-bg); border: 1px solid var(--hk-border); }
