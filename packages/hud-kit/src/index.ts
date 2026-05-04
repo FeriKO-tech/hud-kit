@@ -21,5 +21,6 @@ export type {
 
 export { HealthBar } from './components/HealthBar';
 export { ManaBar } from './components/ManaBar';
+export { DamageNumber } from './components/DamageNumber';
 export { useTypewriter } from './hooks/useTypewriter';
 export { useCooldown } from './hooks/useCooldown';
