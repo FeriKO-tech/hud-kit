@@ -1,4 +1,4 @@
-/* HUD Kit — Gaming HUD components for React */
+/* HUD Kit - Gaming HUD components for React */
 import './styles/components.css';
 
 export type {

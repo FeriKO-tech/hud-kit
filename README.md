@@ -4,8 +4,8 @@ React + TypeScript components for web-game HUDs.
 
 ## Workspace
 
-- `packages/hud-kit` — npm package built with `tsup`.
-- `apps/storybook` — interactive component docs and playground.
+- `packages/hud-kit` - npm package built with `tsup`.
+- `apps/storybook` - interactive component docs and playground.
 
 ## Scripts
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 /**
- * Cooldown hook — counts down from a duration to 0.
+ * Cooldown hook - counts down from a duration to 0.
  * @param duration - total cooldown in seconds
  * @returns { remaining, progress (0-1), isReady, start, reset }
  */

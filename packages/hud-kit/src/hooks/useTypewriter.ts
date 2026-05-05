@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 /**
- * Typewriter hook — reveals text character by character.
+ * Typewriter hook - reveals text character by character.
  * @param text - full text to reveal
  * @param speed - ms per character (default: 40)
  * @returns { displayedText, isComplete, reset }
