@@ -47,7 +47,107 @@
   --hk-minimap-enemy: #ef4444;
   --hk-minimap-npc: #3b82f6;
   --hk-minimap-quest: #fbbf24;
+  --hk-radial-slice: rgba(99,102,241,0.12);
+  --hk-radial-active: rgba(168,85,247,0.32);
+  --hk-radial-border: rgba(255,255,255,0.14);
+  --hk-radial-center: rgba(8,8,18,0.9);
+  --hk-quest-bg: rgba(8,8,18,0.9);
+  --hk-quest-active: rgba(99,102,241,0.18);
+  --hk-quest-progress: #a855f7;
+  --hk-buff: #22c55e;
+  --hk-debuff: #ef4444;
+  --hk-neutral: #94a3b8;
+  --hk-crosshair: #f8fafc;
   --hk-ease-fast: 150ms ease;
   --hk-ease: 300ms ease;
   --hk-ease-slow: 500ms ease;
+}
+
+[data-hk-theme='cyberpunk'], .hk-theme-cyberpunk {
+  --hk-bg: rgba(8,8,24,0.94);
+  --hk-bg2: rgba(20,10,40,0.86);
+  --hk-border: rgba(34,211,238,0.22);
+  --hk-text: #f0fdff;
+  --hk-text2: #67e8f9;
+  --hk-health: #00f5a0;
+  --hk-health-glow: rgba(0,245,160,0.48);
+  --hk-mana: #00d9ff;
+  --hk-mana-glow: rgba(0,217,255,0.48);
+  --hk-xp: #ff2bd6;
+  --hk-xp-glow: rgba(255,43,214,0.48);
+  --hk-dlg-speaker: #00d9ff;
+  --hk-radial-active: rgba(255,43,214,0.36);
+  --hk-quest-progress: #ff2bd6;
+  --hk-crosshair: #00f5ff;
+}
+
+[data-hk-theme='dark-fantasy'], .hk-theme-dark-fantasy {
+  --hk-bg: rgba(18,10,12,0.94);
+  --hk-bg2: rgba(36,18,20,0.86);
+  --hk-border: rgba(245,158,11,0.22);
+  --hk-text: #fff7ed;
+  --hk-text2: #d6a766;
+  --hk-health: #84cc16;
+  --hk-health-glow: rgba(132,204,22,0.42);
+  --hk-mana: #9333ea;
+  --hk-mana-glow: rgba(147,51,234,0.42);
+  --hk-xp: #f59e0b;
+  --hk-xp-glow: rgba(245,158,11,0.46);
+  --hk-dlg-speaker: #f59e0b;
+  --hk-radial-active: rgba(245,158,11,0.34);
+  --hk-quest-progress: #f59e0b;
+  --hk-crosshair: #fed7aa;
+}
+
+[data-hk-theme='sao-style'], .hk-theme-sao-style {
+  --hk-bg: rgba(6,14,28,0.92);
+  --hk-bg2: rgba(12,28,52,0.86);
+  --hk-border: rgba(56,189,248,0.24);
+  --hk-text: #e0f2fe;
+  --hk-text2: #7dd3fc;
+  --hk-health: #38bdf8;
+  --hk-health-glow: rgba(56,189,248,0.42);
+  --hk-mana: #60a5fa;
+  --hk-mana-glow: rgba(96,165,250,0.42);
+  --hk-xp: #facc15;
+  --hk-xp-glow: rgba(250,204,21,0.4);
+  --hk-dlg-speaker: #7dd3fc;
+  --hk-radial-active: rgba(56,189,248,0.34);
+  --hk-quest-progress: #38bdf8;
+  --hk-crosshair: #bae6fd;
+}
+
+[data-hk-theme='minimal'], .hk-theme-minimal {
+  --hk-bg: rgba(248,250,252,0.96);
+  --hk-bg2: rgba(241,245,249,0.92);
+  --hk-border: rgba(15,23,42,0.12);
+  --hk-text: #0f172a;
+  --hk-text2: #64748b;
+  --hk-health: #16a34a;
+  --hk-health-bg: rgba(226,232,240,0.9);
+  --hk-health-glow: rgba(22,163,74,0.2);
+  --hk-mana: #2563eb;
+  --hk-mana-bg: rgba(226,232,240,0.9);
+  --hk-mana-glow: rgba(37,99,235,0.2);
+  --hk-xp: #7c3aed;
+  --hk-xp-bg: rgba(226,232,240,0.9);
+  --hk-xp-glow: rgba(124,58,237,0.2);
+  --hk-slot-bg: rgba(255,255,255,0.9);
+  --hk-slot-border: rgba(15,23,42,0.12);
+  --hk-hotbar-bg: rgba(248,250,252,0.92);
+  --hk-hotbar-slot: rgba(255,255,255,0.96);
+  --hk-dlg-bg: rgba(255,255,255,0.96);
+  --hk-dlg-border: rgba(15,23,42,0.12);
+  --hk-dlg-text: #0f172a;
+  --hk-dlg-speaker: #2563eb;
+  --hk-minimap-bg: rgba(241,245,249,0.9);
+  --hk-minimap-border: rgba(15,23,42,0.12);
+  --hk-radial-slice: rgba(15,23,42,0.06);
+  --hk-radial-active: rgba(37,99,235,0.16);
+  --hk-radial-border: rgba(15,23,42,0.14);
+  --hk-radial-center: rgba(255,255,255,0.94);
+  --hk-quest-bg: rgba(255,255,255,0.96);
+  --hk-quest-active: rgba(37,99,235,0.1);
+  --hk-quest-progress: #2563eb;
+  --hk-crosshair: #0f172a;
 }

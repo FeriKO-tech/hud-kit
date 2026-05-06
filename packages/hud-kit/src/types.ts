@@ -121,3 +121,70 @@ export interface MinimapProps {
   shape?: 'square' | 'circle';
   className?: string;
 }
+
+export interface RadialMenuItem {
+  id: string;
+  label: string;
+  icon?: string | ReactNode;
+  disabled?: boolean;
+}
+
+export interface RadialMenuProps {
+  items: RadialMenuItem[];
+  radius?: number;
+  size?: number;
+  activeIndex?: number;
+  onSelect?: (item: RadialMenuItem, index: number) => void;
+  className?: string;
+}
+
+export interface QuestObjective {
+  id: string;
+  text: string;
+  current?: number;
+  max?: number;
+  completed?: boolean;
+}
+
+export interface Quest {
+  id: string;
+  title: string;
+  description?: string;
+  objectives?: QuestObjective[];
+  progress?: number;
+  active?: boolean;
+}
+
+export interface QuestTrackerProps {
+  quests: Quest[];
+  title?: string;
+  onQuestClick?: (quest: Quest) => void;
+  className?: string;
+}
+
+export interface BuffItem {
+  id: string;
+  label: string;
+  icon: string | ReactNode;
+  duration?: number;
+  remaining?: number;
+  stacks?: number;
+  type?: 'buff' | 'debuff' | 'neutral';
+}
+
+export interface BuffsBarProps {
+  buffs: BuffItem[];
+  size?: number;
+  onBuffClick?: (buff: BuffItem, index: number) => void;
+  className?: string;
+}
+
+export interface CrosshairProps {
+  variant?: 'classic' | 'dot' | 'circle' | 'bracket';
+  size?: number;
+  gap?: number;
+  thickness?: number;
+  color?: string;
+  showCenterDot?: boolean;
+  className?: string;
+}
